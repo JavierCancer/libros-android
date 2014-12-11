@@ -1,1 +1,1 @@
-La API no es mia, es de mi compañero Xavier Urtasun
+He utilizado la API de mi compañero Urtasun porque la mia algunas funciones no me iban del todo bien.

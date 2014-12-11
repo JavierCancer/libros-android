@@ -1,9 +1,11 @@
 package edu.upc.eetac.dsa.jcancer.librosjavi.api;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
 /**
- * Created by Javier on 11/12/2014.
+ * Created by Administrador on 10/12/2014.
  */
 public class Libros {
 
@@ -16,9 +18,42 @@ public class Libros {
     private long dateCreation;
     private long dateImpresion;
     private String Editorial;
+    private String username;
+    private String subject;
+    private String content;
+
+    public String getETag() {
+        return ETag;
+    }
+
+    public void setETag(String ETag) {
+        this.ETag = ETag;
+    }
+
+    private String ETag;
     private Map<String,Link> links = new HashMap<String, Link>();
 
-
+    public String getUsername() {
+        return username;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public String getSubject() {
+        return subject;
+    }
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+    public String getContent() {
+        return content;
+    }
+    public void setContent(String content) {
+        this.content = content;
+    }
+    public void setLinks(Map<String, Link> links) {
+        this.links = links;
+    }
     public int getLibroid() {
         return libroid;
     }
@@ -76,4 +111,6 @@ public class Libros {
     public Map<String, Link> getLinks() {
         return links;
     }
+
+
 }
